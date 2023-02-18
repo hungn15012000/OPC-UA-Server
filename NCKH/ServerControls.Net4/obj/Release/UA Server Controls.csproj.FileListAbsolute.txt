@@ -1,0 +1,62 @@
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Certification.resx
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Certification.cs
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Certification.Designer.cs
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Opc.Ua.ServerControls.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Opc.Ua.ServerControls.pdb
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Newtonsoft.Json.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Opc.Ua.Configuration.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Opc.Ua.Core.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Opc.Ua.Security.Certificates.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\Opc.Ua.Server.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\BouncyCastle.Crypto.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\System.Buffers.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\System.Formats.Asn1.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\System.Memory.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\System.Numerics.Vectors.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Release\System.ValueTuple.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\UA Server Controls.csproj.AssemblyReference.cache
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.Certification.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.Endpoint.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.ExceptionDlg.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.Home.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.Properties.Resources.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.ServerDiagnosticsCtrl.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.ServerForm.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.HeaderBranding.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\UA Server Controls.csproj.GenerateResource.cache
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\UA Server Controls.csproj.CoreCompileInputs.cache
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\UA Server Controls.csproj.CopyComplete
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.ServerControls.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Release\Opc.Ua.ServerControls.pdb
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Certification.resx
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Certification.cs
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Certification.Designer.cs
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Opc.Ua.ServerControls.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Opc.Ua.ServerControls.pdb
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Newtonsoft.Json.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Opc.Ua.Configuration.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Opc.Ua.Core.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Opc.Ua.Security.Certificates.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\Opc.Ua.Server.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\BouncyCastle.Crypto.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\System.Buffers.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\System.Formats.Asn1.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\System.Memory.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\System.Numerics.Vectors.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\NckhProject\NCKH\ServerControls.Net4\bin\Release\System.ValueTuple.dll
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\UA Server Controls.csproj.AssemblyReference.cache
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.Certification.resources
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.Endpoint.resources
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.ExceptionDlg.resources
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.Home.resources
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.Properties.Resources.resources
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.ServerDiagnosticsCtrl.resources
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.ServerForm.resources
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.Server.Controls.HeaderBranding.resources
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\UA Server Controls.csproj.GenerateResource.cache
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\UA Server Controls.csproj.CoreCompileInputs.cache
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\UA Server Controls.csproj.CopyComplete
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.ServerControls.dll
+C:\NckhProject\NCKH\ServerControls.Net4\obj\Release\Opc.Ua.ServerControls.pdb

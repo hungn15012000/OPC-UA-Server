@@ -1,0 +1,14 @@
+AnalogInputType,15006,ObjectType
+AnalogOutputType,15017,ObjectType
+AnalogSensorType,15064,ObjectType
+AutoStateType,15044,ObjectType
+ButtonType,15075,ObjectType
+Camera,15059,ObjectType
+Conveyor,15024,ObjectType
+DigitalType,15019,ObjectType
+GenericControllerType,15001,ObjectType
+PickAndPlace,15026,ObjectType
+PLC1214DCDCDC,15077,Object
+Pusher,15021,ObjectType
+Sensor,15033,ObjectType
+ValveType,15062,ObjectType

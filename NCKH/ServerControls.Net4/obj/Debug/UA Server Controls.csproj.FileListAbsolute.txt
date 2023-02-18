@@ -1,0 +1,31 @@
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Opc.Ua.ServerControls.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Opc.Ua.ServerControls.pdb
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Newtonsoft.Json.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Opc.Ua.Configuration.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Opc.Ua.Core.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Opc.Ua.Security.Certificates.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Opc.Ua.Server.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\BouncyCastle.Crypto.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\System.Buffers.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\System.Formats.Asn1.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\System.Memory.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\System.Numerics.Vectors.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\System.ValueTuple.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\UA Server Controls.csproj.AssemblyReference.cache
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.Server.Controls.ExceptionDlg.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.Server.Controls.Properties.Resources.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.Server.Controls.ServerDiagnosticsCtrl.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.Server.Controls.ServerForm.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.Server.Controls.HeaderBranding.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\UA Server Controls.csproj.GenerateResource.cache
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\UA Server Controls.csproj.CoreCompileInputs.cache
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\UA Server Controls.csproj.CopyComplete
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.ServerControls.dll
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.ServerControls.pdb
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.Server.Controls.Endpoint.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.Server.Controls.Home.resources
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Certification.resx
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Certification.cs
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\bin\Debug\Certification.Designer.cs
+F:\opcua\UA-.NETStandard-Samples\Samples\ServerControls.Net4\obj\Debug\Opc.Ua.Server.Controls.Certification.resources

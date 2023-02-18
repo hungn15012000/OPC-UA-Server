@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<opc:ModelDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:opc="http://opcfoundation.org/UA/ModelDesign.xsd"
+    xmlns:ua="http://opcfoundation.org/UA/"
+    xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd"
+    xmlns="http://opcfoundation.org/ThesisServer" TargetNamespace="http://opcfoundation.org/ThesisServer">
+    <opc:Namespaces>
+        <opc:Namespace Name="OpcUa" Prefix="Opc.Ua" XmlNamespace="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/</opc:Namespace>
+        <opc:Namespace Name="ThesisServer" Prefix="ThesisServer">http://opcfoundation.org/ThesisServer</opc:Namespace>
+    </opc:Namespaces>
+
+    <!-- ### Reference Types ###-->
+
+    <!-- ### Object Types ###-->
+
+    <!-- tạo ObjectType cho PID controller -->
+    <opc:ObjectType SymbolicName = "GenericControllerType" BaseType = "ua:BaseObjectType">
+        <opc:Description>A generic PID Controller</opc:Description>
+        <opc:Children>
+            <opc:Property SymbolicName = "SetPoint" DataType = "ua:Double" ValueRank = "Scalar" AccessLevel = "ReadWrite">
+                <opc:Description> SetPoint: Double</opc:Description>
+            </opc:Property>
+            <opc:Property SymbolicName = "Kp" DataType = "ua:Double" ValueRank = "Scalar" AccessLevel = "ReadWrite">
+                <opc:Description> Kp: Double</opc:Description>
+            </opc:Property>
+            <opc:Property SymbolicName = "Ki" DataType = "ua:Double" ValueRank = "Scalar" AccessLevel = "ReadWrite">
+                <opc:Description>Ki: Double</opc:Description>
+            </opc:Property>
+            <opc:Property SymbolicName = "Kd" DataType = "ua:Double" ValueRank = "Scalar" AccessLevel = "ReadWrite">
+                <opc:Description>Kd: Double</opc:Description>
+            </opc:Property>
+        </opc:Children>
+    </opc:ObjectType>
+
+    <!-- tạo ObjectType cho AnaloginputType -->
+    <opc:ObjectType SymbolicName = "AnalogInputType" BaseType = "ua:BaseObjectType">
+        <opc:Description>Type stand for all analog input of the controller</opc:Description>
+        <opc:Children>
+            <opc:Variable SymbolicName="Output" DataType="ua:Double" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Output: Double </opc:Description>
+            </opc:Variable>
+            <opc:Variable SymbolicName="Ampere" DataType="ua:Double" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Ampere: Double </opc:Description>
+            </opc:Variable>
+            <opc:Variable SymbolicName="AmpereStatus" DataType="ua:String" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Ampere status: string </opc:Description>
+            </opc:Variable>
+            <opc:Variable SymbolicName="Volt" DataType="ua:Double" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Volt: Double </opc:Description>
+            </opc:Variable>
+            <opc:Variable SymbolicName="VoltStatus" DataType="ua:String" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>VoltStatus: string </opc:Description>
+            </opc:Variable>
+            <opc:Variable SymbolicName="Frequency" DataType="ua:Double" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Frequency_Hz: Double</opc:Description>
+            </opc:Variable>
+            <opc:Variable SymbolicName="Power" DataType="ua:Double" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Power: Double</opc:Description>
+            </opc:Variable>
+            <opc:Variable SymbolicName="PowerStatus" DataType="ua:String" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>PowerStatus: string</opc:Description>
+            </opc:Variable>
+            <opc:Variable SymbolicName="PowerFactor" DataType ="ua:Double" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>PowerFactor: Double</opc:Description>
+            </opc:Variable>
+            <opc:Variable SymbolicName="Status" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Status: Boolean</opc:Description>
+            </opc:Variable>
+        </opc:Children>
+    </opc:ObjectType>
+
+    <!-- Tạo ObjectType cho AnalogOutputType -->
+    <opc:ObjectType SymbolicName = "AnalogOutputType" BaseType = "ua:BaseObjectType">
+        <opc:Description>Type stand for all analog output of the controller</opc:Description>
+        <opc:Children>
+            <opc:Variable SymbolicName="Input" DataType="ua:Double" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Input: Double </opc:Description>
+            </opc:Variable>
+        </opc:Children>
+    </opc:ObjectType>
+
+    <!-- Tạo ObjectType cho DigitalType -->
+    <opc:ObjectType SymbolicName = "DigitalType" BaseType = "ua:BaseObjectType">
+        <opc:Description>All digital object in the system.</opc:Description>
+        <opc:Children>
+            <opc:Variable SymbolicName="Value" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Value: Boolean </opc:Description>
+            </opc:Variable>
+        </opc:Children>
+    </opc:ObjectType>
+
+    <!-- Tạo ObjectType cho Pusher -->
+    <opc:ObjectType SymbolicName = "Pusher" BaseType = "ua:BaseObjectType">
+        <opc:Description>Type stand for Pusher</opc:Description>
+        <opc:Children>
+
+            <opc:Variable SymbolicName="PushFront" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Push</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="PushBack" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Pull</opc:Description>
+            </opc:Variable>
+
+        </opc:Children>
+    </opc:ObjectType>
+
+    <!-- Tạo ObjectType cho Belt -->
+    <opc:ObjectType SymbolicName = "Conveyor" BaseType = "ua:BaseObjectType">
+        <opc:Description>Type stand for Conveyor</opc:Description>
+        <opc:Children>
+
+            <opc:Variable SymbolicName="Belt" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Belt</opc:Description>
+            </opc:Variable>
+
+        </opc:Children>
+    </opc:ObjectType>
+
+    <!-- Tạo ObjectType cho PickAndPlace -->
+    <opc:ObjectType SymbolicName = "PickAndPlace" BaseType = "ua:BaseObjectType">
+        <opc:Description>Type stand for PickAndPlace</opc:Description>
+        <opc:Children>
+
+            <opc:Variable SymbolicName="ZDown" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Down</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="ZUp" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Up</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="XRight" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Right</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="XLeft" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Left</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="Pick" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Pick</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="Release" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Release</opc:Description>
+            </opc:Variable>
+
+        </opc:Children>
+    </opc:ObjectType>
+
+    <!-- Tạo ObjectType cho Sensor -->
+    <opc:ObjectType SymbolicName = "Sensor" BaseType = "ua:BaseObjectType">
+        <opc:Description>Type stand for Sensor</opc:Description>
+        <opc:Children>
+
+            <opc:Variable SymbolicName="SSBeltBegin" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSBeltBegin</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="SSBeltEnd" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSBeltEnd</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="SSZUp" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSZUp</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="SSZDown" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSZDown</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="SSX0" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSX0</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="SSX1" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSX1</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="SSX2" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSX2</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="SSX3" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSX3</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="SSPusherFront" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSX3</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="SSPusherBack" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>SSX3</opc:Description>
+            </opc:Variable>
+
+        </opc:Children>
+    </opc:ObjectType>
+
+    <!-- Tạo ObjectType cho AutoState -->
+    <opc:ObjectType SymbolicName = "AutoStateType" BaseType = "ua:BaseObjectType">
+        <opc:Description>Type stand for AutoState</opc:Description>
+        <opc:Children>
+
+            <opc:Variable SymbolicName="S0" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S0</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S1" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S1</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S2" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S2</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S3" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S3</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S4" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S4</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S5" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S5</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S6" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S6</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S7" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S7</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S8" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S8</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S9" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S9</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S10" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S10</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S11" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S11</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S12" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S12</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="S13" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>S13</opc:Description>
+            </opc:Variable>
+
+        </opc:Children>
+    </opc:ObjectType>
+
+    <!-- Tạo ObjectType cho Camera -->
+    <opc:ObjectType SymbolicName = "Camera" BaseType = "ua:BaseObjectType">
+        <opc:Description>Type stand for Camera</opc:Description>
+        <opc:Children>
+
+            <opc:Variable SymbolicName="CameraStatus" DataType="ua:Boolean" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Camera State</opc:Description>
+            </opc:Variable>
+
+            <opc:Variable SymbolicName="CameraData" DataType="ua:String" ValueRank="Scalar" AccessLevel="ReadWrite">
+                <opc:Description>Camera Data</opc:Description>
+            </opc:Variable>
+
+        </opc:Children>
+    </opc:ObjectType>
+
+   
+
+
+
+
+
+    <!-- Sau khi tạo Objectype, được hiểu như class cùng với các Property
+    bước kế tiếp ta sẽ tạo các class phụ kế thừa từ những ObjectType  -->
+
+    <!-- Tạo ValveType kế thừa từ AnalogOutputType -->
+    <opc:ObjectType SymbolicName = "ValveType" BaseType = "AnalogOutputType">
+        <opc:Description>Analog valve</opc:Description>
+    </opc:ObjectType>
+
+    <!-- Tạo AnalogSensorType kế thừa từ AnalogInputType -->
+    <opc:ObjectType SymbolicName = "AnalogSensorType" BaseType = "AnalogInputType">
+        <opc:Description>Sensor</opc:Description>
+    </opc:ObjectType>
+
+    <!-- Tạo ButtonType kế thừa từ DigitalType -->
+    <opc:ObjectType SymbolicName = "ButtonType" BaseType = "DigitalType">
+        <opc:Description>Button</opc:Description>
+    </opc:ObjectType>
+    <!-- End of ObjectType -->
+
+
+    <!-- ### Variable Types ###-->
+
+    <!-- ### Data Types ###-->
+
+    <!-- ### Objects ###-->
+    
+
+
+    <!-- End og Objects -->
+
+    <opc:Object SymbolicName = "PLC1214DCDCDC" BaseType = "ua:BaseObjectType" SupportsEvents = "true">
+        <opc:BrowseName>PLC1214DCDCDC</opc:BrowseName>
+
+        <opc:Children>
+
+                <opc:Object SymbolicName = "OperationButton" BaseType = "ua:BaseObjectType" SupportsEvents = "true">
+                    <opc:BrowseName>Operation Button</opc:BrowseName>
+                    <!-- Bắt đầu thuộc tính của OperationButton -->
+                    <opc:Children>
+
+                        <opc:Object SymbolicName="StartButton" TypeDefinition="ButtonType" SupportsEvents="true">
+                            <opc:BrowseName>Start Button</opc:BrowseName>
+                        </opc:Object>
+
+                        <opc:Object SymbolicName="StopButton" TypeDefinition="ButtonType" SupportsEvents="true">
+                            <opc:BrowseName>Stop Button</opc:BrowseName>
+                        </opc:Object>
+
+                        <opc:Object SymbolicName="ResetButton" TypeDefinition="ButtonType" SupportsEvents="true">
+                            <opc:BrowseName>Reset Button</opc:BrowseName>
+                        </opc:Object>
+
+                        <opc:Object SymbolicName="AutoButton" TypeDefinition="ButtonType" SupportsEvents="true">
+                            <opc:BrowseName>Auto Button</opc:BrowseName>
+                        </opc:Object>
+
+                        <opc:Object SymbolicName="ManualButton" TypeDefinition="ButtonType" SupportsEvents="true">
+                            <opc:BrowseName>Manual Button</opc:BrowseName>
+                        </opc:Object>
+                    </opc:Children>
+                </opc:Object>
+                <!-- Kết thúc OperationButton -->
+
+                
+                <!-- Kết thúc Manual Controller -->
+
+
+                
+                <opc:Object SymbolicName="Monitor" BaseType = "ua:BaseObjectType" SupportsEvents="true">
+                    <opc:BrowseName>Monitor</opc:BrowseName>
+                    <!-- Bắt đầu thuộc tính của Monitor -->
+                    <opc:Children>
+
+                            <opc:Object SymbolicName="ActuatorM" BaseType = "ua:FolderType" SupportsEvents="true">
+                                <opc:BrowseName>Actuator</opc:BrowseName>
+                                <!-- Tạo thư mục  Actuator-->
+                                <opc:Children>
+
+                                    <opc:Object SymbolicName = "PusherParameters" TypeDefinition = "Pusher" SupportsEvents = "true">
+                                        <opc:BrowseName>Pusher</opc:BrowseName>
+                                        <opc:Description>All Parameters from Pusher</opc:Description>
+                                    </opc:Object>
+
+                                    <opc:Object SymbolicName = "BeltParameters" TypeDefinition = "Conveyor" SupportsEvents = "true">
+                                        <opc:BrowseName>Belt</opc:BrowseName>
+                                        <opc:Description>All Parameters from Belt</opc:Description>
+                                    </opc:Object>
+
+                                    <opc:Object SymbolicName = "PickAndPlaceParameters" TypeDefinition = "PickAndPlace" SupportsEvents = "true">
+                                        <opc:BrowseName>PickAndPlace</opc:BrowseName>
+                                        <opc:Description>All Parameters from PickAndPlace</opc:Description>
+                                    </opc:Object>
+
+                                </opc:Children>
+                            </opc:Object>
+                            <!-- Kết thúc Actuator -->
+
+
+                            <opc:Object SymbolicName = "SensorParameters" TypeDefinition = "Sensor" SupportsEvents = "true">
+                                <opc:BrowseName>Sensor</opc:BrowseName>
+                                <opc:Description>All Parameters from Sensor</opc:Description>
+                            </opc:Object>
+
+                            <opc:Object SymbolicName = "AutoStateParameters" TypeDefinition = "AutoStateType" SupportsEvents = "true">
+                                <opc:BrowseName>StateParameters</opc:BrowseName>
+                                <opc:Description>All Parameters from AutoState</opc:Description>
+                            </opc:Object>
+
+                            <opc:Object SymbolicName = "CameraParameters" TypeDefinition = "Camera" SupportsEvents = "true">
+                                <opc:BrowseName>Camera</opc:BrowseName>
+                                <opc:Description>All Parameters from Camera</opc:Description>
+                            </opc:Object>
+
+                    </opc:Children>
+                </opc:Object>
+
+                <!-- Kết thúc Monitor -->
+
+            </opc:Children>
+            
+        <opc:References>
+            <opc:Reference IsInverse = "true">
+                <opc:ReferenceType>ua:Organizes</opc:ReferenceType>
+                <opc:TargetId>ua:ObjectsFolder</opc:TargetId>
+            </opc:Reference>
+        </opc:References>
+    </opc:Object>
+
+    <!--Thesis Object End-->
+
+</opc:ModelDesign>

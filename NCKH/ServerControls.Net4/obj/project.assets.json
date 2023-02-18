@@ -1,0 +1,1021 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Configuration/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Configuration.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Core/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Core.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "Portable.BouncyCastle": "1.9.0",
+          "System.Formats.Asn1": "6.0.0"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Security.Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Security.Certificates.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Server/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Configuration": "1.4.367.95",
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Server.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Server.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/net40/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Formats.Asn1/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/net461/System.Formats.Asn1.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Formats.Asn1.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.2/win": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Configuration/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Configuration.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Core/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Core.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "Portable.BouncyCastle": "1.9.0",
+          "System.Formats.Asn1": "6.0.0"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Security.Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Security.Certificates.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Server/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Configuration": "1.4.367.95",
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Server.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Server.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/net40/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Formats.Asn1/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/net461/System.Formats.Asn1.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Formats.Asn1.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.2/win-x64": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Configuration/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Configuration.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Core/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Core.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "Portable.BouncyCastle": "1.9.0",
+          "System.Formats.Asn1": "6.0.0"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Security.Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Security.Certificates.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Server/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Configuration": "1.4.367.95",
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Server.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Server.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/net40/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Formats.Asn1/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/net461/System.Formats.Asn1.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Formats.Asn1.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.2/win-x86": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Configuration/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Configuration.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Core/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Core.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "Portable.BouncyCastle": "1.9.0",
+          "System.Formats.Asn1": "6.0.0"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Security.Certificates.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Security.Certificates.dll": {}
+        }
+      },
+      "OPCFoundation.NetStandard.Opc.Ua.Server/1.4.367.95": {
+        "type": "package",
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Configuration": "1.4.367.95",
+          "OPCFoundation.NetStandard.Opc.Ua.Core": "1.4.367.95"
+        },
+        "compile": {
+          "lib/net462/Opc.Ua.Server.dll": {}
+        },
+        "runtime": {
+          "lib/net462/Opc.Ua.Server.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/net40/BouncyCastle.Crypto.dll": {}
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net45/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Buffers.dll": {}
+        }
+      },
+      "System.Formats.Asn1/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.ValueTuple": "4.5.0"
+        },
+        "frameworkAssemblies": [
+          "System.Numerics"
+        ],
+        "compile": {
+          "lib/net461/System.Formats.Asn1.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Formats.Asn1.dll": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/net461/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Configuration/1.4.367.95": {
+      "sha512": "vKu816h86aDZi8Fult5U7WmTFEpw/YDQyCDGKFH0FmDmIM3GNDdgndutcvy51CKtF21wh+JQEOEDnwNgDX8JLg==",
+      "type": "package",
+      "path": "opcfoundation.netstandard.opc.ua.configuration/1.4.367.95",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/logo.jpg",
+        "lib/net462/Opc.Ua.Configuration.dll",
+        "lib/net462/Opc.Ua.Configuration.xml",
+        "lib/net6.0/Opc.Ua.Configuration.dll",
+        "lib/net6.0/Opc.Ua.Configuration.xml",
+        "lib/netstandard2.0/Opc.Ua.Configuration.dll",
+        "lib/netstandard2.0/Opc.Ua.Configuration.xml",
+        "lib/netstandard2.1/Opc.Ua.Configuration.dll",
+        "lib/netstandard2.1/Opc.Ua.Configuration.xml",
+        "licenses/LICENSE.txt",
+        "opcfoundation.netstandard.opc.ua.configuration.1.4.367.95.nupkg.sha512",
+        "opcfoundation.netstandard.opc.ua.configuration.nuspec"
+      ]
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Core/1.4.367.95": {
+      "sha512": "BMJYuGpH8zQzW9ce/o3QO6a77yglX6YGoUR5cKDefbBq/ke/6rYeHvhGZ2S8L29zoeuxbpRSlDZTH5QCKqO36g==",
+      "type": "package",
+      "path": "opcfoundation.netstandard.opc.ua.core/1.4.367.95",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/logo.jpg",
+        "lib/net462/Opc.Ua.Core.dll",
+        "lib/net462/Opc.Ua.Core.xml",
+        "lib/net6.0/Opc.Ua.Core.dll",
+        "lib/net6.0/Opc.Ua.Core.xml",
+        "lib/netstandard2.0/Opc.Ua.Core.dll",
+        "lib/netstandard2.0/Opc.Ua.Core.xml",
+        "lib/netstandard2.1/Opc.Ua.Core.dll",
+        "lib/netstandard2.1/Opc.Ua.Core.xml",
+        "licenses/LICENSE.txt",
+        "opcfoundation.netstandard.opc.ua.core.1.4.367.95.nupkg.sha512",
+        "opcfoundation.netstandard.opc.ua.core.nuspec"
+      ]
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Security.Certificates/1.4.367.95": {
+      "sha512": "dZ/SRdex0/DTFHKALBusCemxgXogzT7lbbd3M63ZFeKFT2AnO8qDX8IlxzfvBr0TUjqk8/rdKkNaG9/OFghYgg==",
+      "type": "package",
+      "path": "opcfoundation.netstandard.opc.ua.security.certificates/1.4.367.95",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/logo.jpg",
+        "lib/net462/Opc.Ua.Security.Certificates.dll",
+        "lib/net462/Opc.Ua.Security.Certificates.xml",
+        "lib/net6.0/Opc.Ua.Security.Certificates.dll",
+        "lib/net6.0/Opc.Ua.Security.Certificates.xml",
+        "lib/netstandard2.0/Opc.Ua.Security.Certificates.dll",
+        "lib/netstandard2.0/Opc.Ua.Security.Certificates.xml",
+        "lib/netstandard2.1/Opc.Ua.Security.Certificates.dll",
+        "lib/netstandard2.1/Opc.Ua.Security.Certificates.xml",
+        "licenses/LICENSE.txt",
+        "opcfoundation.netstandard.opc.ua.security.certificates.1.4.367.95.nupkg.sha512",
+        "opcfoundation.netstandard.opc.ua.security.certificates.nuspec"
+      ]
+    },
+    "OPCFoundation.NetStandard.Opc.Ua.Server/1.4.367.95": {
+      "sha512": "o5eWgkZMlULg+RyoMuL/gDVAFEsvBsNu1xEXk/YXKtHm+9KdoJW6jWch15FPeM3i/HUIbos4HrFJj0M+8PthOQ==",
+      "type": "package",
+      "path": "opcfoundation.netstandard.opc.ua.server/1.4.367.95",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/logo.jpg",
+        "lib/net462/Opc.Ua.Server.dll",
+        "lib/net462/Opc.Ua.Server.xml",
+        "lib/net6.0/Opc.Ua.Server.dll",
+        "lib/net6.0/Opc.Ua.Server.xml",
+        "lib/netstandard2.0/Opc.Ua.Server.dll",
+        "lib/netstandard2.0/Opc.Ua.Server.xml",
+        "lib/netstandard2.1/Opc.Ua.Server.dll",
+        "lib/netstandard2.1/Opc.Ua.Server.xml",
+        "licenses/LICENSE.txt",
+        "opcfoundation.netstandard.opc.ua.server.1.4.367.95.nupkg.sha512",
+        "opcfoundation.netstandard.opc.ua.server.nuspec"
+      ]
+    },
+    "Portable.BouncyCastle/1.9.0": {
+      "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.9.0.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Formats.Asn1/6.0.0": {
+      "sha512": "T6fD00dQ3NTbPDy31m4eQUwKW84s03z0N2C8HpOklyeaDgaJPa/TexP4/SkORMSOwc7WhKifnA6Ya33AkzmafA==",
+      "type": "package",
+      "path": "system.formats.asn1/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Formats.Asn1.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Formats.Asn1.dll",
+        "lib/net461/System.Formats.Asn1.xml",
+        "lib/net6.0/System.Formats.Asn1.dll",
+        "lib/net6.0/System.Formats.Asn1.xml",
+        "lib/netstandard2.0/System.Formats.Asn1.dll",
+        "lib/netstandard2.0/System.Formats.Asn1.xml",
+        "system.formats.asn1.6.0.0.nupkg.sha512",
+        "system.formats.asn1.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "sha512": "3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [
+      "OPCFoundation.NetStandard.Opc.Ua.Configuration >= 1.4.367.95",
+      "OPCFoundation.NetStandard.Opc.Ua.Server >= 1.4.367.95"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\NckhProject\\NCKH\\ServerControls.Net4\\UA Server Controls.csproj",
+      "projectName": "UA Server Controls",
+      "projectPath": "C:\\NckhProject\\NCKH\\ServerControls.Net4\\UA Server Controls.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\NckhProject\\NCKH\\ServerControls.Net4\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net462"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net462": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net462": {
+        "dependencies": {
+          "OPCFoundation.NetStandard.Opc.Ua.Configuration": {
+            "target": "Package",
+            "version": "[1.4.367.95, )"
+          },
+          "OPCFoundation.NetStandard.Opc.Ua.Server": {
+            "target": "Package",
+            "version": "[1.4.367.95, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
